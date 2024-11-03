@@ -511,106 +511,78 @@ section {
 }
 
 /* Responsive Styles */
-@media only screen and (max-width: 768px) {
-    .achievement-item {
-        flex-direction: column; /* Stack images and text vertically */
-        text-align: center; /* Center text for smaller screens */
+@media (max-width: 1280px) {
+    /* Add any styles specific to 1280px breakpoint if needed */
+}
+
+/* 768px and below */
+/* Responsive Styling */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack header items on small screens */
+        gap: 1rem;
     }
 
-    .achievement-photo {
-        margin-bottom: 10px; /* Add space between image and text */
-        max-width: 100%; /* Allow image to scale down */
-        max-height: 60px; /* Adjust height for smaller screens */
+    .about .about-container {
+        flex-direction: column; /* Stack about section items on small screens */
+        gap: 2rem;
     }
 
-    .extra-box {
-        width: 90%; /* Wider width for mobile */
-        margin: 10px auto; /* Center boxes with auto margins */
+    .about img {
+        width: 80vw; /* Full width on small screens */
     }
 
-    .extra-box img {
-        flex: 0 0 80px; /* Adjust image size */
-        margin-right: 10px; /* Space adjustment */
+    .project-card {
+        padding: 1rem; /* Reduce padding on project cards */
     }
 
-    .box-style {
-        max-width: 90%; /* Max width adjustment */
-        padding: 1rem; /* Adjust padding */
+    .experience-photo {
+        width: 100%; /* Responsive photo width */
+        height: auto; /* Maintain aspect ratio */
     }
 
-    .section-subtitle {
-        font-size: 1.5rem; /* Adjust subtitle size */
+    .extra-curricular-container {
+        flex-direction: column; /* Stack extracurricular items */
     }
 
-    .contact h2 {
-        font-size: 2.5rem; /* Smaller heading size */
-    }
-
-    .contact p {
-        font-size: 1rem; /* Smaller paragraph size */
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-        font-size: 0.9rem; /* Smaller input size */
-    }
-
-    .submit-btn {
-        font-size: 1rem; /* Smaller button size */
-        padding: 0.8rem 1.5rem; /* Adjust button padding */
-    }
-
-    .socials i {
-        font-size: 2rem; /* Smaller icon size */
+    .btn-group {
+        flex-direction: column; /* Stack buttons on small screens */
     }
 }
 
-/* Extra Small Devices (Portrait phones, less than 480px) */
-@media only screen and (max-width: 480px) {
-    .contact {
-        padding: 5rem 5%; /* Reduced padding */
+/* 600px and below */
+@media (max-width: 600px) {
+    .project-grid {
+        flex-direction: column; /* Stack project cards vertically */
     }
 
-    .contact-form {
-        gap: 1rem; /* Smaller gap between form elements */
+    .project-card {
+        margin-bottom: 1rem; /* Spacing between project cards */
     }
 
-    .extra-box {
-        width: 95%; /* Nearly full width on extra small screens */
+    .project-photo {
+        width: 100%; /* Make project images responsive */
+        height: auto; /* Maintain aspect ratio */
     }
 
-    .achievement-text h3 {
-        font-size: 1.1em; /* Adjust font size for better readability */
+    .btn-group {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center buttons */
     }
 
-    .achievement-photo {
-        max-height: 50px; /* Further reduce height for very small screens */
+    .btn {
+        width: 100%; /* Full-width buttons */
+        margin: 0.5rem 0; /* Spacing between buttons */
     }
-}
 
-/* Main Menu Styles */
-.main-menu {
-    display: flex; /* Display items in a row */
-    justify-content: space-around; /* Space out menu items */
-}
+    .certificate-item {
+        width: 100%; /* Full-width certificate items */
+        margin-bottom: 1rem; /* Spacing between certificates */
+    }
 
-.main-menu a {
-    font-size: 1.5rem; /* Default font size for menu items */
-    padding: 1rem; /* Default padding for menu items */
-}
-
-/* Responsive Styles for Main Menu */
-@media only screen and (max-width: 768px) {
-    .main-menu a {
-        font-size: 1rem; /* Smaller font size for mobile */
-        padding: 0.5rem; /* Reduced padding for a more compact menu */
+    .extra-curricular-container {
+        flex-direction: column; /* Stack extra-curricular items */
+        align-items: center; /* Center items */
     }
 }
 
-/* Extra Small Devices (Portrait phones, less than 480px) */
-@media only screen and (max-width: 480px) {
-    .main-menu a {
-        font-size: 0.9rem; /* Further decrease font size */
-        padding: 0.4rem; /* Further decrease padding */
-    }
-}
