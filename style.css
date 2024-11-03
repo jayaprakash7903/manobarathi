@@ -286,8 +286,9 @@ section {
 
 .project-photo {
     width: 100%;
-    height: auto;
-    transition: transform 0.3s;
+    height: 200px; /* Adjust height as needed */
+    object-fit: cover; /* Ensures the image fills the space while keeping its aspect ratio */
+    border-radius: 5px; /* Optional: for rounded corners */
 }
 
 .project-image-container:hover .project-photo {
