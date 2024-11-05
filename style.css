@@ -553,78 +553,61 @@ section {
 }
 
 /* Responsive Styles */
+/* Responsive Styles */
 @media (max-width: 1280px) {
-    /* Add any styles specific to 1280px breakpoint if needed */
+    /* Specific styles for 1280px breakpoint if needed */
 }
 
 /* 768px and below */
-/* Responsive Styling */
 @media (max-width: 768px) {
     header {
-        flex-direction: column; /* Stack header items on small screens */
+        flex-direction: column;
         gap: 1rem;
+        padding: 1rem; /* Add padding for spacing */
     }
 
-    .about .about-container {
-        flex-direction: column; /* Stack about section items on small screens */
+    .about .about-container,
+    .extra-curricular-container {
+        flex-direction: column;
         gap: 2rem;
+        align-items: center; /* Center items for better presentation */
     }
 
-    .about img {
-        width: 80vw; /* Full width on small screens */
+    .about img,
+    .experience-photo,
+    .project-photo {
+        width: 100%;
+        height: auto;
     }
 
     .project-card {
-        padding: 1rem; /* Reduce padding on project cards */
-    }
-
-    .experience-photo {
-        width: 100%; /* Responsive photo width */
-        height: auto; /* Maintain aspect ratio */
-    }
-
-    .extra-curricular-container {
-        flex-direction: column; /* Stack extracurricular items */
+        padding: 1rem;
+        margin-bottom: 1rem; /* Ensure spacing between project cards */
     }
 
     .btn-group {
-        flex-direction: column; /* Stack buttons on small screens */
+        flex-direction: column;
+        align-items: center; /* Center buttons */
+    }
+
+    .btn {
+        width: 100%;
+        margin: 0.5rem 0; /* Space buttons apart */
     }
 }
 
 /* 600px and below */
 @media (max-width: 600px) {
-    .project-grid {
-        flex-direction: column; /* Stack project cards vertically */
-    }
-
-    .project-card {
-        margin-bottom: 1rem; /* Spacing between project cards */
-    }
-
-    .project-photo {
-        width: 100%; /* Make project images responsive */
-        height: auto; /* Maintain aspect ratio */
-    }
-
-    .btn-group {
-        flex-direction: column; /* Stack buttons vertically */
-        align-items: center; /* Center buttons */
-    }
-
-    .btn {
-        width: 100%; /* Full-width buttons */
-        margin: 0.5rem 0; /* Spacing between buttons */
+    .project-grid,
+    .extra-curricular-container {
+        flex-direction: column;
+        align-items: center; /* Center items for improved presentation */
     }
 
     .certificate-item {
-        width: 100%; /* Full-width certificate items */
-        margin-bottom: 1rem; /* Spacing between certificates */
-    }
-
-    .extra-curricular-container {
-        flex-direction: column; /* Stack extra-curricular items */
-        align-items: center; /* Center items */
+        width: 100%;
+        margin-bottom: 1rem;
     }
 }
+
 
