@@ -552,62 +552,55 @@ section {
     box-sizing: border-box;
 }
 
-/* Responsive Styles */
-/* Responsive Styles */
-@media (max-width: 1280px) {
-    /* Specific styles for 1280px breakpoint if needed */
-}
 
-/* 768px and below */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     header {
-        flex-direction: column;
+        flex-direction: row;
         gap: 1rem;
-        padding: 1rem; /* Add padding for spacing */
-    }
-
-    .about .about-container,
-    .extra-curricular-container {
-        flex-direction: column;
-        gap: 2rem;
-        align-items: center; /* Center items for better presentation */
-    }
-
-    .about img,
-    .experience-photo,
-    .project-photo {
-        width: 100%;
-        height: auto;
-    }
-
-    .project-card {
         padding: 1rem;
-        margin-bottom: 1rem; /* Ensure spacing between project cards */
+        
+    }
+
+    .about img {
+        width: 80%; /* Adjust image width */
+    }
+
+    .nav-links {
+        display: none; /* Hide navigation links for mobile */
+    }
+
+    #menu-icon {
+        display: block; /* Show menu icon for mobile navigation */
+    }
+
+    .info-box h1 {
+        font-size: 2.5rem; /* Smaller font size for headings */
+    }
+
+    .info-box span {
+        font-size: 1.5rem;
     }
 
     .btn-group {
-        flex-direction: column;
-        align-items: center; /* Center buttons */
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 0.5rem;
     }
 
-    .btn {
-        width: 100%;
-        margin: 0.5rem 0; /* Space buttons apart */
+    .project-item {
+        flex-direction: column; /* Stack image and details */
     }
+
+    .achievement-item {
+        flex-direction: column; /* Stack image and text */
+    }
+    .about-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
 }
-
-/* 600px and below */
-@media (max-width: 600px) {
-    .project-grid,
-    .extra-curricular-container {
-        flex-direction: column;
-        align-items: center; /* Center items for improved presentation */
-    }
-
-    .certificate-item {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-}
-
 
